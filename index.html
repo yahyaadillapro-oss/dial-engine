@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIAL ENGINE | The Next-Gen Drive CRM</title>
     <style>
-        /* --- TOTAL FRUTIGER AERO OVERHAUL --- */
+        /* --- TRUE FRUTIGER AERO REVAMP --- */
         body {
             margin: 0;
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #0078d7 0%, #00bfff 50%, #ffffff 100%);
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0078d7 url('https://www.transparenttextures.com/patterns/clouds.png');
+            background: linear-gradient(135deg, #05a1ff 0%, #ffffff 100%);
             background-attachment: fixed;
             color: #1a1a1a;
-            overflow-x: hidden;
         }
 
         header {
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            padding: 40px 20px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 100%);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+            padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 120, 215, 0.2);
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             color: #fff;
-            text-shadow: 0px 4px 10px rgba(0, 120, 215, 0.5), 0px 0px 20px rgba(255, 255, 255, 0.8);
+            text-shadow: 0px 5px 15px rgba(0, 90, 158, 0.6), 0px 0px 30px rgba(255, 255, 255, 1);
             margin: 0;
-            letter-spacing: -1px;
+            letter-spacing: -2px;
+            font-style: italic;
         }
 
         .glass-container {
             max-width: 1000px;
             margin: 40px auto;
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(20px);
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(25px);
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.9);
             padding: 40px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 0 20px rgba(255,255,255,0.5), 0 25px 50px rgba(0, 0, 0, 0.1);
         }
 
-        /* --- THE REAL FEATURES --- */
+        /* --- FEATURES --- */
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -51,54 +52,62 @@
         }
 
         .feature-card {
-            background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(230,245,255,0.8) 100%);
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(200,235,255,0.6) 100%);
             padding: 30px;
-            border-radius: 20px;
-            border: 1px solid #fff;
+            border-radius: 25px;
+            border: 2px solid #fff;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .feature-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0,120,215,0.2);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,120,215,0.3);
         }
 
-        h3 { color: #005a9e; font-size: 1.5rem; margin-top: 0; }
-        p { line-height: 1.6; color: #333; font-weight: 500; }
+        h3 { color: #005a9e; font-size: 1.6rem; margin-top: 0; text-shadow: 1px 1px 0 #fff; }
+        p { line-height: 1.6; color: #111; font-weight: 600; }
 
-        /* --- BUTTONS (Glossy/Bubble Style) --- */
+        /* --- BUTTONS --- */
         .btn-row {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
             margin-top: 50px;
-            justify-content: center;
         }
 
         .btn {
-            padding: 18px 35px;
-            border-radius: 50px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 60px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
+            font-weight: 900;
+            font-size: 1.2rem;
             color: white;
-            border: 2px solid rgba(255,255,255,0.8);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-            transition: 0.2s;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 3px solid rgba(255,255,255,0.9);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            text-align: center;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+            text-transform: uppercase;
         }
 
-        .privacy-btn {
-            background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
-        }
-
-        .contact-btn {
-            background: linear-gradient(180deg, #66fb71 0%, #21ad2b 100%);
-        }
+        .privacy-btn { background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%); }
+        .contact-btn { background: linear-gradient(180deg, #5dfd69 0%, #119e1c 100%); }
 
         .btn:hover {
-            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+            transform: scale(1.05);
             filter: brightness(1.1);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
+        .email-backup {
+            font-size: 0.9rem;
+            color: #005a9e;
+            font-weight: bold;
+            margin-top: 5px;
         }
 
     </style>
@@ -110,32 +119,34 @@
 </header>
 
 <div class="glass-container">
-    <p style="text-align: center; font-size: 1.4rem; color: #005a9e; font-weight: 800; margin-bottom: 40px;">
-        High-Octane Lead Management. Native Google Drive Architecture.
+    <p style="text-align: center; font-size: 1.5rem; color: #005a9e; font-weight: 900; margin-bottom: 40px; text-shadow: 1px 1px 0 #fff;">
+        Native Google Architecture. Professional Grade Performance.
     </p>
 
     <div class="feature-grid">
         <div class="feature-card">
-            <h3>🏠 Zillow Live-Sync</h3>
-            <p>Don't fly blind. The terminal pulls property data directly so you see the house and the value before you even hit dial.</p>
+            <h3>🏡 ZILLOW VIEW</h3>
+            <p>Live property data injection. See the value, the beds/baths, and the street view inside your terminal before you call.</p>
         </div>
         <div class="feature-card">
-            <h3>⚡ Click-to-Call VOIP</h3>
-            <p>Integrated dialing protocol. Connect your VOIP provider and fire off calls directly from the terminal interface.</p>
+            <h3>📞 VOIP CALLING</h3>
+            <p>Direct-dial integration. Connect your provider and launch calls with one click from your Spreadsheet Terminal.</p>
         </div>
         <div class="feature-card">
-            <h3>📊 Master KPI Injection</h3>
-            <p>Bypass the lag. Every status update hits the leadership dashboard instantly via private Apps Script triggers.</p>
+            <h3>📊 LIVE KPI FEED</h3>
+            <p>Instant leadership reporting. Worker actions are pushed to the Master Dashboard with zero delay via Apps Script.</p>
         </div>
         <div class="feature-card">
-            <h3>📂 Zero-Footprint CRM</h3>
-            <p>No extensions. No browser tracking. Total data sovereignty within your own Google Workspace.</p>
+            <h3>📂 ZERO EXTENSIONS</h3>
+            <p>No software to install. No background tracking. Total privacy and speed within the Google Drive ecosystem.</p>
         </div>
     </div>
 
     <div class="btn-row">
-        <a href="privacy.html" class="btn privacy-btn">Privacy Policy</a>
-        <a href="mailto:yahyaadillapro@gmail.com?subject=Dial Engine Inquiry" class="btn contact-btn">yahyaadillapro@gmail.com</a>
+        <a href="privacy.html" class="btn privacy-btn">VIEW PRIVACY POLICY</a>
+        
+        <a href="mailto:yahyaadillapro@gmail.com" class="btn contact-btn">CONTACT DEVELOPER</a>
+        <span class="email-backup">Manual Copy: yahyaadillapro@gmail.com</span>
     </div>
 </div>
 
