@@ -2,46 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="EGDuNKsmrwqs-oW036DFSDES7pw81E-qI2DpcGdMaxE" />
-    <title>Dial Engine | Lead Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Master Engine | Automation Suite</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; background-color: #f4f7f6; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; margin-top: 0; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0; border-radius: 8px; border: 2px solid #ddd; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .btn { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .footer { margin-top: 40px; font-size: 0.8em; color: #888; border-top: 1px solid #eee; padding-top: 10px; }
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 5px solid var(--primary);
+        }
+        .status-badge {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        h2 { color: var(--primary); margin-top: 0; }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .feature-item {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        .cta-button:hover { background: #1d4ed8; }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <h1>Dial Engine</h1>
-    <p>A specialized lead management and sales automation tool for Google Sheets.</p>
+<header>
+    <h1>KPI Master Engine V2.0</h1>
+    <p>Automated Lead Management & Productivity Tracking</p>
+</header>
 
-    <h3>App Demonstration & OAuth Flow</h3>
-    <p>Below is the required demonstration of the application's functionality and data usage for Google Verification:</p>
-
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/9Ro2gfkIk2k" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+<div class="container">
+    <div class="card">
+        <span class="status-badge">● System Online</span>
+        <h2>Project Overview</h2>
+        <p>A custom-built ecosystem designed for Seif PHH to bridge the gap between individual dialer efforts and executive-level oversight.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <strong>🚀 Instant Reporting</strong>
+                <p>Real-time data injection from worker sheets to Master KPI.</p>
+            </div>
+            <div class="feature-item">
+                <strong>📞 Dialer Terminal</strong>
+                <p>Custom sidebar interface for high-speed lead navigation.</p>
+            </div>
+        </div>
     </div>
 
-    <hr>
-    
-    <p>
-        <strong>Links:</strong><br><br>
-        <a href="privacy.html" class="btn">View Privacy Policy</a>
-    </p>
+    <div class="card">
+        <h2>Technical Architecture</h2>
+        <p>The system utilizes Google Apps Script (JavaScript) and custom-built triggers to bypass standard spreadsheet limitations, ensuring 100% data integrity across distributed teams.</p>
+        
+        <div style="background: #334155; color: #94a3b8; padding: 3rem; border-radius: 8px; text-align: center;">
+            <p><strong>Demo Video Protected</strong></p>
+            <p style="font-size: 0.8rem;">Contains PII (Private Lead Information). Access restricted to authorized personnel only.</p>
+        </div>
 
-    <div class="footer">
-        <p>Developer Contact: yahyaadillapro@gmail.com</p>
-        <p>© 2026 Dial Engine</p>
+        <a href="mailto:YOUR_EMAIL@HERE.COM" class="cta-button">Request Private Demo Access</a>
     </div>
 </div>
 
